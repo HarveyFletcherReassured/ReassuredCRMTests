@@ -1,0 +1,61 @@
+
+Files in pc-stuff:
+====================
+for info
+
+http://www.seleniummonster.com/category/selenium-webdriver-2/ some selenium stuff
+
+https://siteobservers.zendesk.com/hc/en-us/articles/201989070-Start-selenium-server-with-additional-command-line-arguments
+
+Files:
+chromedriver.exe  is the windows chromedriver executable
+chromedriver64lin is the linux 64 bit executable
+selenium-server-standalone-2.47.1.jar as used in the commands below
+
+create directory:
+C:\selenium
+
+copy selenium-server-standalone-2.47.1.jar into C:\selenium
+copy chromedriver.exe                      into C:\selenium
+
+set path to include current directory
+
+
+
+run java with -ea option to pick up assertion errors
+
+
+cd C:\selenium
+cmd one:
+java -jar selenium-server-standalone-2.47.1.jar -role hub -log selenium-hub.log
+
+cmd two:
+java -jar selenium-server-standalone-2.47.1.jar -role node -hub "http://localhost:4444/" -log selenium-hub.log
+
+to use  chrome add :
+-Dwebdriver.chrome.driver=c:\selenium\chromedriver.exe
+
+java -jar selenium-server-standalone-2.47.1.jar -role node -hub "http://localhost:4444/" -log selenium-node.log -Dwebdriver.chrome.driver=c:\selenium\chromedriver.exe 
+
+node with setting examples:
+-browser browserName=firefox,version=3.6,platform=LINUX
+-browser browserName=firefox,version=3.6,maxInstances=5,platform=LINUX
+-browser browserName=firefox,version=3.6,firefox_binary=/home/myhomedir/firefox36/firefox,maxInstances=3,platform=LINUX 
+-browser browserName=firefox,version=4,firefox_binary=/home/myhomedir/firefox4/firefox,maxInstances=4,platform=LINUX
+
+
+set available version of java to be picked up:
+
+update-alternatives --config java
+
+
+firefox is in /usr/bin
+
+######################### linux ##########################
+java -jar /usr/bin/selenium-server-standalone-2.47.1.jar -role hub -log /selenium/log/selenium-hub.log
+
+
+java -jar /usr/bin/selenium-server-standalone-2.47.1.jar -role node -hub "http://192.168.201.231:4444/grid/register/" -log /selenium/log/selenium-hub.log
+
+
+
