@@ -1,11 +1,13 @@
 package CRM_Tests;
 
 import com.mysql.fabric.xmlrpc.base.Array;
+import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -17,6 +19,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by hfletcher on 07/09/2017.
@@ -67,6 +70,24 @@ public class baseclass {
             message = "[INFO]  There was no open driver session to close.";
             WL.writeout(message);
         }
+    }
+
+    public String[] readDropDown(String DropDownId, WebDriver driver, String[] options){
+        //What options are in the drop down menu
+        Select menu = new Select(driver.findElement(By.id(DropDownId)));
+
+        //Set I to 0
+        int i = 0;
+
+        //How long is the list
+        int length = menu.getOptions().size();
+
+        while(i < length){
+            options[i] = menu.getOptions().get(i).getText();
+            i++;
+        }
+
+        return options;
     }
 
     public String[] userCredentials(int Username, int Password){

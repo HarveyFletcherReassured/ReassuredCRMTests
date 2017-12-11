@@ -1,5 +1,6 @@
 package CRM_Tests;
 
+import org.apache.regexp.RE;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -9,6 +10,15 @@ import org.openqa.selenium.WebDriver;
 public class dev_380_list_create_new_user {
 
     static void MainClass(WebDriver driver, String url, String message, baseclass WL) {
+        //Write the new class to the log
+        try{
+            message = "[INFO]  Started the tests in \"DEV_380\"_list_create_new_user";
+            WL.writeout(message);
+        } catch (Exception Exception){
+            System.out.println(message);
+            System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
+        }
+
         //Open the new CRM at the login page
         driver.get(url);
 
@@ -31,12 +41,16 @@ public class dev_380_list_create_new_user {
         //Start the test by opening the form
         AdminUserOpenForm(driver, url, message, WL);
         //Now do field validation checks
-        AddUserFieldValidationsBlankForm(driver, url, message, WL);
-        AddUserFieldValidationsWhiteSpaceAllFields(driver, url, message, WL);
-        AddUserFieldValidationsSpecialChars(driver, url, message, WL);
-        AddUserFieldValidationsEmailAddress(driver, url, message, WL);
-        AddUserFieldValidationsPhoneExtension(driver, url, message, WL);
-        AddUserFieldValidationsValid(driver, url, message, WL);
+        //AddUserFieldValidationsBlankForm(driver, url, message, WL);
+        //AddUserFieldValidationsWhiteSpaceAllFields(driver, url, message, WL);
+        //AddUserFieldValidationsSpecialChars(driver, url, message, WL);
+        //AddUserFieldValidationsEmailAddress(driver, url, message, WL);
+        //AddUserFieldValidationsPhoneExtension(driver, url, message, WL);
+        //AddUserFieldValidationsValid(driver, url, message, WL);
+        //Open the user list form
+        //AdminViewUserListSearchOptions(driver, url, message, WL);
+        //AdminViewUserListCheckTableHeadings(driver, url, message, WL);
+        AdminViewUserListSearchFirstname(driver, url, message, WL);
     }
 
     static void AdminUserOpenForm(WebDriver driver, String url, String message, baseclass WL){
@@ -147,8 +161,7 @@ public class dev_380_list_create_new_user {
 
     static void AddUserFieldValidationsBlankForm(WebDriver driver, String url, String message, baseclass WL) {
         //Declare that the new test was started, write the test name
-        String consistent = "\n[INFO]  Started test " + new Object() {
-        }.getClass().getEnclosingMethod().getName();
+        String consistent = "\n[INFO]  Started test " + new Object() {}.getClass().getEnclosingMethod().getName();
 
         //Try and submit the form before putting anything in it
         try {
@@ -859,6 +872,253 @@ public class dev_380_list_create_new_user {
 
             consistent = consistent + "\n[FAIL]  Test Failed.";
         };
+
+        //Write to the log file, if it fails, print out to System.out and add a warning message
+        try{
+            message = consistent;
+            WL.writeout(message);
+        } catch (Exception Exception){
+            System.out.println(consistent);
+            System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
+        }
+    }
+
+    static void AdminViewUserListSearchOptions(WebDriver driver, String url, String message, baseclass WL){
+        //Declare that the new test was started, write the test name
+        String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
+
+        //Go to the dash board
+        driver.get(url + "all-users");
+
+        //Wait for the page to load, shouldn't take more than 2 seconds.
+        try {
+            Thread.sleep(500);
+        } catch (Exception Exception) {
+            consistent = consistent + "\n[INFO]  There was an issue with waiting for .5 seconds.";
+        };
+
+        //Log the URL that loaded
+        String PageLoadedURL = driver.getCurrentUrl();
+
+        if(PageLoadedURL.matches(url + "all-users")){
+            consistent = consistent + "\n[PASS]  Loaded the all-users list";
+        } else {
+            consistent = consistent + "\n[FAIL]  Failed to load the all-users list. Page " + PageLoadedURL + " was opened instead.";
+
+            //Take a screenshot for evidence
+            try{
+                consistent = consistent + (WL.screenshot(driver, WL));
+            } catch (Exception Exception){
+                Exception.printStackTrace();
+            }
+        }
+
+        //Check the panel heading text is OK
+        String PanelTitlePage = driver.findElement(By.className("panel-heading")).getText();
+        if(PanelTitlePage.matches("All Users")){
+            consistent = consistent + "\n[PASS]  Panel heading is OK \"All Users\"";
+        } else {
+            consistent = consistent + "\n[FAIL]  The panel heading was incorrect, it was \"" + PanelTitlePage + "\" when it should have been \"All Users\"";
+
+            //Take a screenshot for evidence
+            try{
+                consistent = consistent + (WL.screenshot(driver, WL));
+            } catch (Exception Exception){
+                Exception.printStackTrace();
+            }
+        }
+
+        //Check that there is actually a search box.
+        if(driver.findElements(By.id("filter")).size() >= 0){
+            consistent = consistent + "\n[PASS]  Search box is present";
+
+            //Check the search box has a title.
+            String PanelSearchBox = driver.findElement(By.className("col-md-10")).getText();
+            if(PanelSearchBox.contains("Quick search current results")){
+                consistent = consistent + "\n[PASS]  Search box is titled correctly";
+            } else {
+                consistent = consistent + "\n[FAIL]  Search box is NOT titled correctly";
+
+                //Take a screenshot for evidence
+                try{
+                    consistent = consistent + (WL.screenshot(driver, WL));
+                } catch (Exception Exception){
+                    Exception.printStackTrace();
+                }
+            }
+        } else {
+            consistent = consistent + "\n[FAIL]  Search box is NOT present";
+
+            //Take a screenshot for evidence
+            try{
+                consistent = consistent + (WL.screenshot(driver, WL));
+            } catch (Exception Exception){
+                Exception.printStackTrace();
+            }
+        }
+
+        //Check the search box has a title.
+        String FilterRecords = driver.findElement(By.className("col-md-2")).getText();
+        if(FilterRecords.contains("Filter records")){
+            consistent = consistent + "\n[PASS]  There is a title for [Filter Records]";
+
+            //Check that there is actually a search box.
+            if(driver.findElements(By.id("recordFilter")).size() >= 0){
+                consistent = consistent + "\n[PASS]  Search box is present";
+
+                String[] options = new String[3];
+
+                WL.readDropDown("recordFilter", driver, options);
+                System.out.println(options[0] + options[1] + options[2]);
+
+                //Check that the expected options are in the drop down and in the right order
+                if(options[0].matches("All Users") && options[1].matches("Live Users") && options[2].matches("Disabled Users")){
+                    consistent = consistent + "\n[PASS]  The \"Filter Records\" drop-down matched what was expected.";
+                } else {
+                    consistent = consistent + "\n[FAIL]  The \"Filter Records\" drop-down did not match what was expected. Options were:";
+
+                    int i = 0;
+                    while(i < 3){
+                        consistent = consistent + "\n    [" + options[i] + "]";
+                        i++;
+                    }
+                    consistent = consistent + "\n[INFO]  It was not possible to take a screenshot of this bug. Manual check required.";
+                }
+
+            } else {
+                consistent = consistent + "\n[FAIL]  Search box is NOT present";
+
+                //Take a screenshot for evidence
+                try{
+                    consistent = consistent + (WL.screenshot(driver, WL));
+                } catch (Exception Exception){
+                    Exception.printStackTrace();
+                }
+            }
+        } else {
+            consistent = consistent + "\n[FAIL]  There is NOT a title for [Filter Records] or it is not correctly worded.";
+
+            //Take a screenshot for evidence
+            try{
+                consistent = consistent + (WL.screenshot(driver, WL));
+            } catch (Exception Exception){
+                Exception.printStackTrace();
+            }
+        }
+
+        //Write to the log file, if it fails, print out to System.out and add a warning message
+        try{
+            message = consistent;
+            WL.writeout(message);
+        } catch (Exception Exception){
+            System.out.println(consistent);
+            System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
+        }
+    }
+
+    static void AdminViewUserListCheckTableHeadings(WebDriver driver, String url, String message, baseclass WL){
+        //Declare that the new test was started, write the test name
+        String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
+
+        //Re load the page
+        driver.get(url + "all-users");
+
+        //Get the section of the table that has the headings.
+        String col1 = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/thead/tr/th[1]")).getText();
+        String col2 = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/thead/tr/th[2]")).getText();
+        String col3 = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/thead/tr/th[3]")).getText();
+        String col4 = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/thead/tr/th[4]")).getText();
+        String col5 = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/thead/tr/th[5]")).getText();
+        String col6 = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/thead/tr/th[6]")).getText();
+
+        int fail = 0;
+
+        if(!col1.matches("User")){
+            consistent = consistent + "\n[FAIL]  \"User\" option didn't match what was expected";
+            consistent = consistent + "\n    Options Received:";
+            consistent = consistent + "\n        \"" + col1 + "\"";
+            fail = 1;
+        } else if(!col2.matches("Created")){
+            consistent = consistent + "\n[FAIL]  \"Created\" option didn't match what was expected";
+            consistent = consistent + "\n    Options Received:";
+            consistent = consistent + "\n        \"" + col2 + "\"";
+            fail = 1;
+        } else if(!col3.matches("Extension")){
+            consistent = consistent + "\n[FAIL]  \"Extension\" option didn't match what was expected";
+            consistent = consistent + "\n    Options Received:";
+            consistent = consistent + "\n        \"" + col3 + "\"";
+            fail = 1;
+        } else if(!col4.matches("Context")){
+            consistent = consistent + "\n[FAIL]  \"Context\" option didn't match what was expected";
+            consistent = consistent + "\n    Options Received:";
+            consistent = consistent + "\n        \"" + col4 + "\"";
+            fail = 1;
+        } else if(!col5.matches("Disabled")){
+            consistent = consistent + "\n[FAIL]  \"Disabled\" option didn't match what was expected";
+            consistent = consistent + "\n    Options Received:";
+            consistent = consistent + "\n        \"" + col5 + "\"";
+            fail = 1;
+        } else if(!col6.matches("Action")){
+            consistent = consistent + "\n[FAIL]  \"Action\" option didn't match what was expected";
+            consistent = consistent + "\n    Options Received:";
+            consistent = consistent + "\n        \"" + col5 + "\"";
+            fail = 1;
+        }
+
+        if(fail == 1){
+            //Take a screenshot for evidence
+            try{
+                consistent = consistent + (WL.screenshot(driver, WL));
+            } catch (Exception Exception){
+                Exception.printStackTrace();
+            }
+        } else {
+            consistent = consistent + "\n[PASS]  All table headings matched the expected titles.";
+        }
+
+        //Write to the log file, if it fails, print out to System.out and add a warning message
+        try{
+            message = consistent;
+            WL.writeout(message);
+        } catch (Exception Exception){
+            System.out.println(consistent);
+            System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
+        }
+    }
+
+    static void AdminViewUserListSearchFirstname(WebDriver driver, String url, String message, baseclass WL){
+        //Declare that the new test was started, write the test name
+        String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
+
+        //Re load the page
+        driver.get(url + "all-users");
+
+        //Search for "Andrew"
+        driver.findElement(By.id("filter")).sendKeys("Andrew");
+
+        //Check results that are returned - assume we have at least 16 andrews in the company, row 17 is for andy smith.
+        int i = 1;
+        String Result = "";
+        while(i <= 16){
+            Result = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/tbody/tr[" + i + "]/td[1]")).getText();
+
+            if(!Result.contains("Andrew")){
+                consistent = consistent + "\n[FAIL]  Search filter returned an " + Result + ", which is not an \"Andrew\"";
+            } else {
+                consistent = consistent + "\n[PASS]  Search filter returned only names which contain \"Andrew\"";
+                consistent = consistent + "\n    " + i + "-> " + Result;
+            }
+
+            i++;
+        }
+
+        Result = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/tbody/tr[17]/td[1]")).getText();
+        if(!Result.contains("Andy Smith (Mgr)")){
+            consistent = consistent + "\n[FAIL]  Search filter returned " + Result + ", which is not \"Andy Smith (Mgr)\"";
+        } else {
+            consistent = consistent + "\n[PASS]  Search filter returned names which contain \"Andrew\" as firstname, including Andy Smith Mgr";
+            consistent = consistent + "\n    17-> " + Result;
+        }
 
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
