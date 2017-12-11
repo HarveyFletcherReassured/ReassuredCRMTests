@@ -1,16 +1,13 @@
 package CRM_Tests;
 
-import com.gargoylesoftware.htmlunit.ElementNotFoundException;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.Platform;
-import org.openqa.selenium.WebDriver;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -27,9 +24,9 @@ public class baseclass {
     public WebDriver driver;
 
     @SuppressWarnings("resource")
-    @Test(threadPoolSize = 5, invocationCount = 10)
+    @Test(threadPoolSize = 5, invocationCount = 1)
     public void main() throws  Exception{
-        String url = "http://test.reassuredpensions.co.uk";
+        String url = "http://10.128.128.10/";
 
         try {
             WebDriver driver = setUp();
@@ -54,55 +51,41 @@ public class baseclass {
         baseclass WL = new baseclass();
         String message = "Initial.";
 
-        //Tests you want to run while creating new leads
-        //lead_creation_method Method1 = new lead_creation_method();
-        //lead_creation_method.TheTest(driver, url, message, WL, daterequired);
-        driver.quit();
+        int userGroup = 1;
+
+        //Tests for the login page
+        login_page_tests LoginPage = new login_page_tests();
+        login_page_tests.MainClass(driver, url, message, WL, userGroup);
+
+        //Close any remaining webdriver sessions
+        try{
+            driver.quit();
+        } catch (Exception Exception) {
+            message = "[INFO]  There was no open driver session to close.";
+            WL.writeout(message);
+        }
     }
 
     static void writeout(String message) throws IOException{
         Date currentdate = new Date();
         try{
             System.out.println(message);
-            Files.write(Paths.get("C:/CRM_Tests/src/CRM_Tests/logfile.txt"), (currentdate + " - " + message +  System.getProperty("line.separator")).getBytes(), StandardOpenOption.APPEND);
+            Files.write(Paths.get("C:/CRM_Tests/src/CRM_Tests/logfile.txt"), (currentdate + ":" + "    " + message.replace("\n", System.getProperty("line.separator")) +  System.getProperty("line.separator") +  System.getProperty("line.separator")).getBytes(), StandardOpenOption.APPEND);
         } catch (IOException WriteError){
             System.out.println("[WARN]  Failed to write the log file. Continuing anyway...");
         }
     }
 
-    static void switchusr(String username, WebDriver driver, String url, baseclass WL, String message){
-        try{
-            try{
-                driver.findElement(By.className("logout")).click();
-            } catch (NoSuchElementException NSEE){
-                message = "[WARN]  Couldn't find the logout button... User might already be signed out or was not signed in in the first place. Additional info code: " + NSEE.getClass().getSimpleName();
-                WL.writeout(message);
-            }
-            driver.get(url);
-            driver.findElement(By.id("UserUsername")).clear();
-            driver.findElement(By.id("UserUsername")).sendKeys(username);
-            driver.findElement(By.id("UserPassword")).clear();
-            driver.findElement(By.id("UserPassword")).sendKeys("Tstpasswd@Adrian");
-            new Select(driver.findElement(By.id("ghostuser"))).selectByVisibleText("Selenium");
-            driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
+    public String screenshot(WebDriver driver, baseclass WL) throws IOException{
+        Date datetime = new Date();
 
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException var3) {
-                var3.printStackTrace();
-            };
+        String FileName = "C:/CRM_Tests/src/CRM_Tests/screenshots/shot_" + datetime.toString().replace(" ","_").replace(":","_") + ".png";
 
-            message = "[PASS]  Signed in / Switched user to the " + username + " user, ghost selenium password.";
-            WL.writeout(message);
-        } catch (Exception E){
-            try {
-                message = "[FAIL]    Failed to sign in / switch user to the " + username + " user, ghost selenium password. Error: " + E;
-                WL.writeout(message);
-            } catch (Exception e){
-                System.out.println("[WARN]  Failed to write the log file. Continuing anyway...");
-            }
+        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File(FileName));
 
-        }
+        return "\n[INFO]  Screenshot saved as " + FileName;
     }
 
     static WebDriver setUp() throws MalformedURLException{
