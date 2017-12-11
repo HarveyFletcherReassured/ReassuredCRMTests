@@ -1,5 +1,6 @@
 package CRM_Tests;
 
+import com.mysql.fabric.xmlrpc.base.Array;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -64,6 +65,17 @@ public class baseclass {
             message = "[INFO]  There was no open driver session to close.";
             WL.writeout(message);
         }
+    }
+
+    public String[] userCredentials(int Username, int Password){
+        String[][] Credentials = {
+                {"hfletcher","dwilkins","dharris","sloadwickmgr","enewell","dpescottrl","bgallop","swilkin","apougher","aweber","mwatts","lwatts","thisisnotavalidusername"},
+                {"*HArGB@@1979","thisisnotavalidpassword"}
+        };
+
+        String[] result = { Credentials[0][Username] , Credentials[1][Password]};
+
+        return result;
     }
 
     static void writeout(String message) throws IOException{

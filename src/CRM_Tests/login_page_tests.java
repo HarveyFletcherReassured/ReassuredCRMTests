@@ -3,6 +3,9 @@ package CRM_Tests;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import java.lang.reflect.Array;
+
 /**
  * Created by hfletcher on 07/12/2017.
  */
@@ -11,39 +14,58 @@ public class login_page_tests{
     static void MainClass(WebDriver driver, String url, String message, baseclass WL, int userGroup){
         driver.get(url);
 
-        //Initial username and password
+        //Setup username and password VARS, they will be needed later
+        String[] Credentials = WL.userCredentials(12,1);
         String username = "";
         String password = "";
-
-        //What usergroup are we trying to open?
-        if(userGroup == 1){
-            username = "hfletcher";
-            password = "*HArGB@@1979";
-        }
 
         //Just print a success message in the terminal
         message = "[INFO]  Started the login page tests";
         System.out.println(message);
 
         //Tests that check text on the page
-        PageText(driver, url, message, WL);
+        //PageText(driver, url, message, WL);
 
         //Tests that check all the links on the page
-        LinkChecks(driver, url, message, WL);
+        //LinkChecks(driver, url, message, WL);
 
         //Test a set of credentials with a valid username, invalid password
+        //Get a valid username and invalid password
+        Credentials = WL.userCredentials(0,1);
+        username = Credentials[0];
+        password = Credentials[1];
+        //Start Test
         LCValidUserNotPass(driver, url, message, WL, username, password);
 
-        //Test a set of credentials with an ivalid username, valid password
+        //Test a set of credentials with an invalid username, valid password
+        //Get login details
+        Credentials = WL.userCredentials(12,0);
+        username = Credentials[0];
+        password = Credentials[1];
+        //Start Test
         LCValidPassNotUser(driver, url, message, WL, username, password);
 
         //Test a set of credentials with a no username, no password
+        //Get Login Details
+        username = "";
+        password = "";
+        //Start Test
         LCNoUserAndPass(driver, url, message, WL, username, password);
 
-        //Test a set of credentials with a no username, no password
+        //Test a set of credentials with a username, no password
+        //Get Login Details
+        Credentials = WL.userCredentials(0,0);
+        username = Credentials[0];
+        password = "";
+        //Start Test
         LCUserAndNoPass(driver, url, message, WL, username, password);
 
         //Test a set of credentials with a valid username, valid password
+        //Get Login Details
+        Credentials = WL.userCredentials(0,0);
+        username = Credentials[0];
+        password = Credentials[1];
+        //Start Test
         LCValidUserAndPass(driver, url, message, WL, username, password);
     }
 

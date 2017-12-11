@@ -1,2 +1,122 @@
+Mon Dec 11 10:49:59 GMT 2017:    
+[INFO]  Started test PageText
+[PASS]  Text "Reassured CRM" was present on the page.
+[PASS]  Text "Login" along with "Register" was present on the page.
+[PASS]  Text "Login" along with "Register" was present on the page.
 
+Mon Dec 11 10:50:06 GMT 2017:    
+[INFO]  Started test LinkChecks
+[PASS]  "Reassured CRM" link is ok on the login page, loaded page: http://10.128.128.10/
+[PASS]  "Login" link is OK on the login page, loaded page: http://10.128.128.10/
+[PASS]  "Register" link is OK on the login page, loaded page: http://10.128.128.10/add-user
+
+Mon Dec 11 10:50:07 GMT 2017:    
+[INFO]  Started test LCValidUserNotPass
+[INFO]  Attempting to log in as user hfletcher with password *HArGB@@1979
+[PASS]  Clicked login button, hoping for the best with credentials hfletcher with password *HArGB@@1979
+[FAIL]  The text for incorrect username or password was not displayed, did not match the specified text, or the user got signed in when they should not have been. Further investigation is required.
+[INFO]  Screenshot saved as C:/CRM_Tests/src/CRM_Tests/screenshots/shot_Mon_Dec_11_10_50_06_GMT_2017.png
+
+Mon Dec 11 10:50:08 GMT 2017:    
+[INFO]  Started test LCValidPassNotUser
+[INFO]  Attempting to log in as user thisisnotaworkingusername1234 with password *HArGB@@1979
+[PASS]  Clicked login button, hoping for the best with credentials thisisnotaworkingusername1234 with password *HArGB@@1979
+[FAIL]  The text for incorrect username or password was not displayed, did not match the specified text, or the user got signed in when they should not have been. Further investigation is required.
+[INFO]  Screenshot saved as C:/CRM_Tests/src/CRM_Tests/screenshots/shot_Mon_Dec_11_10_50_07_GMT_2017.png
+
+Mon Dec 11 10:50:08 GMT 2017:    
+[INFO]  Started test LCNoUserAndPass
+[INFO]  Attempting to log in without a username, but with a password
+[PASS]  Clicked login button
+[PASS]  Text "The username field is required." was present on the page.
+
+Mon Dec 11 10:50:09 GMT 2017:    
+[INFO]  Started test LCUserAndNoPass
+[INFO]  Attempting to log in with a username, but without a password
+[PASS]  Clicked login button
+[PASS]  Text "The password field is required." was present on the page.
+
+Mon Dec 11 10:50:11 GMT 2017:    
+[INFO]  Started test LCValidUserAndPass
+[INFO]  Attempting to log in as user hfletcher with password *HArGB@@1979 expecting it to be successful
+[PASS]  Clicked login button, hoping for the best with credentials hfletcher with password *HArGB@@1979 expecting it to be successful
+[PASS]  The user was logged in and the error was not displayed.
+
+Mon Dec 11 10:57:28 GMT 2017:    
+[INFO]  Started test PageText
+[PASS]  Text "Reassured CRM" was present on the page.
+[PASS]  Text "Login" along with "Register" was present on the page.
+[PASS]  Text "Login" along with "Register" was present on the page.
+
+Mon Dec 11 10:57:34 GMT 2017:    
+[INFO]  Started test LinkChecks
+[PASS]  "Reassured CRM" link is ok on the login page, loaded page: http://10.128.128.10/
+[PASS]  "Login" link is OK on the login page, loaded page: http://10.128.128.10/
+[PASS]  "Register" link is OK on the login page, loaded page: http://10.128.128.10/add-user
+
+Mon Dec 11 11:20:44 GMT 2017:    
+[INFO]  Started test LCValidUserNotPass
+[INFO]  Attempting to log in as user hfletcher with password thisisnotavalidpassword
+[PASS]  Clicked login button, hoping for the best with credentials hfletcher with password thisisnotavalidpassword
+[FAIL]  The text for incorrect username or password was not displayed, did not match the specified text, or the user got signed in when they should not have been. Further investigation is required.
+[INFO]  Screenshot saved as C:/CRM_Tests/src/CRM_Tests/screenshots/shot_Mon_Dec_11_11_20_43_GMT_2017.png
+
+Mon Dec 11 11:20:45 GMT 2017:    
+[INFO]  Started test LCValidPassNotUser
+[INFO]  Attempting to log in as user thisisnotaworkingusername1234 with password *HArGB@@1977
+[PASS]  Clicked login button, hoping for the best with credentials thisisnotaworkingusername1234 with password *HArGB@@1977
+[FAIL]  The text for incorrect username or password was not displayed, did not match the specified text, or the user got signed in when they should not have been. Further investigation is required.
+[INFO]  Screenshot saved as C:/CRM_Tests/src/CRM_Tests/screenshots/shot_Mon_Dec_11_11_20_44_GMT_2017.png
+
+Mon Dec 11 11:20:45 GMT 2017:    
+[INFO]  Started test LCNoUserAndPass
+[INFO]  Attempting to log in without a username, but with a password
+[PASS]  Clicked login button
+[PASS]  Text "The username field is required." was present on the page.
+
+Mon Dec 11 11:20:46 GMT 2017:    
+[INFO]  Started test LCUserAndNoPass
+[INFO]  Attempting to log in with a username, but without a password
+[PASS]  Clicked login button
+[PASS]  Text "The password field is required." was present on the page.
+
+Mon Dec 11 11:20:49 GMT 2017:    
+[INFO]  Started test LCValidUserAndPass
+[INFO]  Attempting to log in as user hfletcher with password *HArGB@@1977 expecting it to be successful
+[PASS]  Clicked login button, hoping for the best with credentials hfletcher with password *HArGB@@1977 expecting it to be successful
+[FAIL]  The text for incorrect username or password was displayed. It should not have been.
+[INFO]  Screenshot saved as C:/CRM_Tests/src/CRM_Tests/screenshots/shot_Mon_Dec_11_11_20_48_GMT_2017.png
+
+Mon Dec 11 11:22:50 GMT 2017:    
+[INFO]  Started test LCValidUserNotPass
+[INFO]  Attempting to log in as user hfletcher with password thisisnotavalidpassword
+[PASS]  Clicked login button, hoping for the best with credentials hfletcher with password thisisnotavalidpassword
+[FAIL]  The text for incorrect username or password was not displayed, did not match the specified text, or the user got signed in when they should not have been. Further investigation is required.
+[INFO]  Screenshot saved as C:/CRM_Tests/src/CRM_Tests/screenshots/shot_Mon_Dec_11_11_22_49_GMT_2017.png
+
+Mon Dec 11 11:22:51 GMT 2017:    
+[INFO]  Started test LCValidPassNotUser
+[INFO]  Attempting to log in as user thisisnotaworkingusername1234 with password *HArGB@@1977
+[PASS]  Clicked login button, hoping for the best with credentials thisisnotaworkingusername1234 with password *HArGB@@1977
+[FAIL]  The text for incorrect username or password was not displayed, did not match the specified text, or the user got signed in when they should not have been. Further investigation is required.
+[INFO]  Screenshot saved as C:/CRM_Tests/src/CRM_Tests/screenshots/shot_Mon_Dec_11_11_22_50_GMT_2017.png
+
+Mon Dec 11 11:22:51 GMT 2017:    
+[INFO]  Started test LCNoUserAndPass
+[INFO]  Attempting to log in without a username, but with a password
+[PASS]  Clicked login button
+[PASS]  Text "The username field is required." was present on the page.
+
+Mon Dec 11 11:22:52 GMT 2017:    
+[INFO]  Started test LCUserAndNoPass
+[INFO]  Attempting to log in with a username, but without a password
+[PASS]  Clicked login button
+[PASS]  Text "The password field is required." was present on the page.
+
+Mon Dec 11 11:22:55 GMT 2017:    
+[INFO]  Started test LCValidUserAndPass
+[INFO]  Attempting to log in as user hfletcher with password *HArGB@@1977 expecting it to be successful
+[PASS]  Clicked login button, hoping for the best with credentials hfletcher with password *HArGB@@1977 expecting it to be successful
+[FAIL]  The text for incorrect username or password was displayed. It should not have been.
+[INFO]  Screenshot saved as C:/CRM_Tests/src/CRM_Tests/screenshots/shot_Mon_Dec_11_11_22_54_GMT_2017.png
 
