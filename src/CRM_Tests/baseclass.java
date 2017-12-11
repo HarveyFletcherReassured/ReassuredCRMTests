@@ -52,11 +52,13 @@ public class baseclass {
         baseclass WL = new baseclass();
         String message = "Initial.";
 
-        int userGroup = 1;
-
         //Tests for the login page
-        login_page_tests LoginPage = new login_page_tests();
-        login_page_tests.MainClass(driver, url, message, WL, userGroup);
+        //login_page_tests LoginPage = new login_page_tests();
+        //login_page_tests.MainClass(driver, url, message, WL);
+
+        //Tests for the add user and list user page
+        dev_380_list_create_new_user ListCreateNewUser = new dev_380_list_create_new_user();
+        dev_380_list_create_new_user.MainClass(driver, url, message, WL);
 
         //Close any remaining webdriver sessions
         try{

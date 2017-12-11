@@ -11,7 +11,7 @@ import java.lang.reflect.Array;
  */
 public class login_page_tests{
 
-    static void MainClass(WebDriver driver, String url, String message, baseclass WL, int userGroup){
+    static void MainClass(WebDriver driver, String url, String message, baseclass WL){
         driver.get(url);
 
         //Setup username and password VARS, they will be needed later

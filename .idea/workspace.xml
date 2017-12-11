@@ -2,8 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb2b817e-b3e7-4754-b170-69524e6fcb89" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/leads.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/newfile.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_02_14_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_02_15_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_05_15_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_06_35_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_07_42_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_09_15_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_09_42_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_11_30_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_18_32_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_19_50_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_20_27_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_22_39_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_25_27_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_26_58_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_26_59_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_50_06_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_10_50_07_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_11_20_43_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_11_20_44_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_11_20_48_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_11_22_49_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_11_22_50_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/screenshots/shot_Mon_Dec_11_11_22_54_GMT_2017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/newfile.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_10_02_14_GMT_2017.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/baseclass.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/baseclass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/login_page_tests.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/login_page_tests.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/logfile.txt" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/logfile.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" afterPath="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/logfile.txt" afterPath="$PROJECT_DIR$/src/CRM_Tests/logfile.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java" afterPath="$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +56,8 @@
       <file leaf-file-name="baseclass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CRM_Tests/baseclass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="72" column="30" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+            <state relative-caret-position="234">
+              <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,11 +65,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_page_tests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dev_380_list_create_new_user.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5882">
+              <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logfile.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CRM_Tests/logfile.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_page_tests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
-              <caret line="68" column="55" lean-forward="false" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+            <state relative-caret-position="181">
+              <caret line="502" column="102" lean-forward="false" selection-start-line="502" selection-start-column="30" selection-end-line="502" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,6 +119,7 @@
       <find>3000</find>
       <find>String cons</find>
       <find>//Take a sc</find>
+      <find>assertFal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,10 +161,15 @@
         <option value="$PROJECT_DIR$/src/CRM_Tests/notifications_send_setup.java" />
         <option value="$PROJECT_DIR$/src/CRM_Tests/check_provider_logins.java" />
         <option value="$PROJECT_DIR$/src/CRM_Tests/lead_creation_method.java" />
-        <option value="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" />
         <option value="$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java" />
+        <option value="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" />
+        <option value="$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java" />
+        <option value="$PROJECT_DIR$/src/CRM_Tests/logfile.txt" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -699,34 +760,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 11h 05m 23s.xml">
+    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 13h 32m 45s.xml">
       <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 11h 10m 15s.xml">
+    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 13h 39m 00s.xml">
       <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 11h 10m 28s.xml">
+    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 13h 40m 17s.xml">
       <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 11h 10m 59s.xml">
+    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 13h 41m 16s.xml">
       <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 11h 11m 21s.xml">
+    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 13h 46m 56s.xml">
       <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 11h 13m 03s.xml">
+    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 13h 47m 26s.xml">
       <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 11h 13m 37s.xml">
+    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 13h 48m 21s.xml">
       <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 11h 20m 50s.xml">
+    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 13h 51m 27s.xml">
       <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 11h 22m 56s.xml">
+    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 13h 57m 46s.xml">
       <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 11h 23m 49s.xml">
+    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.11 at 14h 01m 45s.xml">
       <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -741,10 +802,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30211818" sideWeight="0.30597016" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30211818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30211818" sideWeight="0.69402987" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -806,8 +867,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/CRM_Tests/logintest.java" />
-    <entry file="file://$PROJECT_DIR$/src/CRM_Tests/openleads.java" />
     <entry file="file://$PROJECT_DIR$/src/CRM_Tests/gridtest1.java" />
     <entry file="file://$PROJECT_DIR$/src/CRM_Tests/logintest.java" />
     <entry file="file://$PROJECT_DIR$/src/CRM_Tests/openleads.java" />
@@ -890,8 +949,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CRM_Tests/baseclass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="72" column="30" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+        <state relative-caret-position="234">
+          <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -900,11 +959,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="68" column="55" lean-forward="false" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+        <state relative-caret-position="181">
+          <caret line="502" column="102" lean-forward="false" selection-start-line="502" selection-start-column="30" selection-end-line="502" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5882">
+          <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CRM_Tests/logfile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
