@@ -59,14 +59,14 @@ public class dev_380_list_create_new_user {
         //Tests are done! Log message
         try{
             message = "[INFO]  Finished the tests in \"DEV_380\"_list_create_new_user";
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(message);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void AdminUserOpenForm(WebDriver driver, String url, String message, baseclass WL){
+    static void AdminUserOpenForm(WebDriver driver, String url, String message, baseclass BC){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -81,7 +81,7 @@ public class dev_380_list_create_new_user {
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 E.printStackTrace();
             }
@@ -89,7 +89,7 @@ public class dev_380_list_create_new_user {
 
         //Take a screenshot for evidence
         try{
-            consistent = consistent + (WL.screenshot(driver, WL) + " passed but keeping this for evidence or later review");
+            consistent = consistent + (BC.screenshot(driver, BC) + " passed but keeping this for evidence or later review");
         } catch (Exception E){
             E.printStackTrace();
         }
@@ -119,7 +119,7 @@ public class dev_380_list_create_new_user {
 
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception E){
                     E.printStackTrace();
                 }
@@ -127,7 +127,7 @@ public class dev_380_list_create_new_user {
                 //Write to the log file, if it fails, print out to System.out and add a warning message
                 try{
                     message = consistent;
-                    WL.writeout(message);
+                    BC.writeout(message);
                 } catch (Exception Exception){
                     System.out.println(consistent);
                     System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
@@ -142,7 +142,7 @@ public class dev_380_list_create_new_user {
             //Write to the log file, if it fails, print out to System.out and add a warning message
             try{
                 message = consistent;
-                WL.writeout(message);
+                BC.writeout(message);
             } catch (Exception Exception){
                 System.out.println(consistent);
                 System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
@@ -154,7 +154,7 @@ public class dev_380_list_create_new_user {
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 E.printStackTrace();
             }
@@ -164,7 +164,7 @@ public class dev_380_list_create_new_user {
             //Write to the log file, if it fails, print out to System.out and add a warning message
             try{
                 message = consistent;
-                WL.writeout(message);
+                BC.writeout(message);
             } catch (Exception Exception){
                 System.out.println(consistent);
                 System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
@@ -172,7 +172,7 @@ public class dev_380_list_create_new_user {
         }
     }
 
-    static void AddUserFieldValidationsBlankForm(WebDriver driver, String url, String message, baseclass WL) {
+    static void AddUserFieldValidationsBlankForm(WebDriver driver, String url, String message, baseclass BC) {
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object() {}.getClass().getEnclosingMethod().getName();
 
@@ -185,9 +185,9 @@ public class dev_380_list_create_new_user {
 
                 //Exit this test but take a screenshot first.
                 try {
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                     message = consistent;
-                    WL.writeout(message);
+                    BC.writeout(message);
                     return;
                 } catch (Exception Exception) {
                     System.out.println(consistent);
@@ -207,7 +207,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the first name field, it should do.";
                 //Take a screenshot for evidence
                 try {
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception) {
                     Exception.printStackTrace();
                 }
@@ -220,7 +220,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the surname field, it should do.";
                 //Take a screenshot for evidence
                 try {
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception) {
                     Exception.printStackTrace();
                 }
@@ -233,7 +233,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the username field, it should do.";
                 //Take a screenshot for evidence
                 try {
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception) {
                     Exception.printStackTrace();
                 }
@@ -246,7 +246,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the email field, it should do.";
                 //Take a screenshot for evidence
                 try {
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception) {
                     Exception.printStackTrace();
                 }
@@ -259,7 +259,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the ldap username field, it should do.";
                 //Take a screenshot for evidence
                 try {
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception) {
                     Exception.printStackTrace();
                 }
@@ -272,7 +272,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the phone extension field, it should do.";
                 //Take a screenshot for evidence
                 try {
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception) {
                     Exception.printStackTrace();
                 }
@@ -285,7 +285,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the ddi field, it should do.";
                 //Take a screenshot for evidence
                 try {
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception) {
                     Exception.printStackTrace();
                 }
@@ -298,7 +298,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the mobile phone number field, it should do.";
                 //Take a screenshot for evidence
                 try {
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception) {
                     Exception.printStackTrace();
                 }
@@ -311,7 +311,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the job description field, it should do.";
                 //Take a screenshot for evidence
                 try {
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception) {
                     Exception.printStackTrace();
                 }
@@ -320,7 +320,7 @@ public class dev_380_list_create_new_user {
             consistent = consistent + "\n[FAIL]  Add user form was submitted when it was blank, or the error messages displayed were incorrect.";
             //Take a screenshot for evidence
             try {
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception) {
                 Exception.printStackTrace();
             }
@@ -331,14 +331,14 @@ public class dev_380_list_create_new_user {
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void AddUserFieldValidationsWhiteSpaceAllFields(WebDriver driver, String url, String message, baseclass WL){
+    static void AddUserFieldValidationsWhiteSpaceAllFields(WebDriver driver, String url, String message, baseclass BC){
         //Re-load the form
         driver.get(url + "add-user");
 
@@ -365,9 +365,9 @@ public class dev_380_list_create_new_user {
 
                 //Exit this test but take a screenshot first.
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                     message = consistent;
-                    WL.writeout(message);
+                    BC.writeout(message);
                     return;
                 } catch (Exception Exception){
                     System.out.println(consistent);
@@ -387,7 +387,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the first name field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -400,7 +400,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the surname field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -413,7 +413,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the username field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -426,7 +426,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the email field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -439,7 +439,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the ldap username field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -452,7 +452,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the phone extension field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -465,7 +465,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the ddi field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -478,7 +478,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the mobile phone number field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -491,7 +491,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the job description field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -500,7 +500,7 @@ public class dev_380_list_create_new_user {
             consistent = consistent + "\n[FAIL]  Add user form was submitted when it was blank, or the error messages displayed were incorrect.";
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -511,14 +511,14 @@ public class dev_380_list_create_new_user {
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void AddUserFieldValidationsSpecialChars(WebDriver driver, String url, String message, baseclass WL){
+    static void AddUserFieldValidationsSpecialChars(WebDriver driver, String url, String message, baseclass BC){
         //Re-load the form
         driver.get(url + "add-user");
 
@@ -545,9 +545,9 @@ public class dev_380_list_create_new_user {
 
                 //Exit this test but take a screenshot first.
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                     message = consistent;
-                    WL.writeout(message);
+                    BC.writeout(message);
                     return;
                 } catch (Exception Exception){
                     System.out.println(consistent);
@@ -567,7 +567,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the first name field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -580,7 +580,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the surname field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -593,7 +593,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the username field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -606,7 +606,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the email field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -619,7 +619,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the ldap username field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -632,7 +632,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the phone extension field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -645,7 +645,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the ddi field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -658,7 +658,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the mobile phone number field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -671,7 +671,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the job description field, it should do.";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -680,7 +680,7 @@ public class dev_380_list_create_new_user {
             consistent = consistent + "\n[FAIL]  Add user form was submitted when it was blank, or the error messages displayed were incorrect.";
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -691,14 +691,14 @@ public class dev_380_list_create_new_user {
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void AddUserFieldValidationsEmailAddress(WebDriver driver, String url, String message, baseclass WL){
+    static void AddUserFieldValidationsEmailAddress(WebDriver driver, String url, String message, baseclass BC){
         //Re-load the form
         driver.get(url + "add-user");
 
@@ -724,7 +724,7 @@ public class dev_380_list_create_new_user {
             consistent = consistent + "\n[PASS]  The new user added text was not displayed on the page";
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -734,7 +734,7 @@ public class dev_380_list_create_new_user {
             consistent = consistent + "\n[FAIL]  The new user added text was displayed on the page when it should not have been.";
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -745,14 +745,14 @@ public class dev_380_list_create_new_user {
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void AddUserFieldValidationsPhoneExtension(WebDriver driver, String url, String message, baseclass WL){
+    static void AddUserFieldValidationsPhoneExtension(WebDriver driver, String url, String message, baseclass BC){
         //Re-load the form
         driver.get(url + "add-user");
 
@@ -778,9 +778,9 @@ public class dev_380_list_create_new_user {
 
             //Exit this test but take a screenshot first.
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
                 message = consistent;
-                WL.writeout(message);
+                BC.writeout(message);
                 return;
             } catch (Exception Exception){
                 System.out.println(consistent);
@@ -799,7 +799,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the phone extension field, it should do - The phone extension field should only accept numbers";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -812,7 +812,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the DDI field, it should do - The DDI field should only accept numbers";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -825,7 +825,7 @@ public class dev_380_list_create_new_user {
                 consistent = consistent + "\n[FAIL]  The error did not contain information on the Mobile Phone Number field, it should do - The Mobile Phone Number field should only accept numbers";
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -835,14 +835,14 @@ public class dev_380_list_create_new_user {
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void AddUserFieldValidationsValid(WebDriver driver, String url, String message, baseclass WL){
+    static void AddUserFieldValidationsValid(WebDriver driver, String url, String message, baseclass BC){
         //Re-load the form
         driver.get(url + "add-user");
 
@@ -868,7 +868,7 @@ public class dev_380_list_create_new_user {
             consistent = consistent + "\n[PASS]  The new user added text was displayed on the page";
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -878,7 +878,7 @@ public class dev_380_list_create_new_user {
             consistent = consistent + "\n[FAIL]  The new user added text was NOT displayed on the page when it should not have been.";
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -889,14 +889,14 @@ public class dev_380_list_create_new_user {
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void AdminViewUserListSearchOptions(WebDriver driver, String url, String message, baseclass WL){
+    static void AdminViewUserListSearchOptions(WebDriver driver, String url, String message, baseclass BC){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -920,7 +920,7 @@ public class dev_380_list_create_new_user {
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -935,7 +935,7 @@ public class dev_380_list_create_new_user {
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -954,7 +954,7 @@ public class dev_380_list_create_new_user {
 
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -964,7 +964,7 @@ public class dev_380_list_create_new_user {
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -981,7 +981,7 @@ public class dev_380_list_create_new_user {
 
                 String[] options = new String[3];
 
-                WL.readDropDown("recordFilter", driver, options);
+                BC.readDropDown("recordFilter", driver, options);
                 System.out.println(options[0] + options[1] + options[2]);
 
                 //Check that the expected options are in the drop down and in the right order
@@ -1003,7 +1003,7 @@ public class dev_380_list_create_new_user {
 
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -1013,7 +1013,7 @@ public class dev_380_list_create_new_user {
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -1022,14 +1022,14 @@ public class dev_380_list_create_new_user {
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void AdminViewUserListCheckTableHeadings(WebDriver driver, String url, String message, baseclass WL){
+    static void AdminViewUserListCheckTableHeadings(WebDriver driver, String url, String message, baseclass BC){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -1081,7 +1081,7 @@ public class dev_380_list_create_new_user {
         if(fail == 1){
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -1092,14 +1092,14 @@ public class dev_380_list_create_new_user {
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void AdminViewUserListSearchFirstname(WebDriver driver, String url, String message, baseclass WL){
+    static void AdminViewUserListSearchFirstname(WebDriver driver, String url, String message, baseclass BC){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -1127,7 +1127,7 @@ public class dev_380_list_create_new_user {
 
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -1147,7 +1147,7 @@ public class dev_380_list_create_new_user {
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -1167,14 +1167,14 @@ public class dev_380_list_create_new_user {
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void AdminViewUserListSearchLastname(WebDriver driver, String url, String message, baseclass WL){
+    static void AdminViewUserListSearchLastname(WebDriver driver, String url, String message, baseclass BC){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -1199,7 +1199,7 @@ public class dev_380_list_create_new_user {
 
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception Exception){
                     Exception.printStackTrace();
                 }
@@ -1226,14 +1226,14 @@ public class dev_380_list_create_new_user {
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void AdminViewUserListSearchFirstnameLastname(WebDriver driver, String url, String message, baseclass WL){
+    static void AdminViewUserListSearchFirstnameLastname(WebDriver driver, String url, String message, baseclass BC){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -1259,7 +1259,7 @@ public class dev_380_list_create_new_user {
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception Exception){
                 Exception.printStackTrace();
             }
@@ -1271,14 +1271,14 @@ public class dev_380_list_create_new_user {
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void AdminViewUserListSearchUsername(WebDriver driver, String url, String message, baseclass WL){
+    static void AdminViewUserListSearchUsername(WebDriver driver, String url, String message, baseclass BC){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -1295,7 +1295,7 @@ public class dev_380_list_create_new_user {
         //Build a list of usernames to search for
         int i = 0;
         while(i < 12){
-            String[] Credentials = WL.userCredentials(i, 1);
+            String[] Credentials = BC.userCredentials(i, 1);
             usernamesSearch[i] = Credentials[0];
             i++;
         }
@@ -1314,7 +1314,7 @@ public class dev_380_list_create_new_user {
                 Result = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/tbody/tr[1]/td[1]")).getText();
 
                 //What is the fullname of the user
-                String fullname = WL.usernameToFirstname(usernamesSearch[i]);
+                String fullname = BC.usernameToFirstname(usernamesSearch[i]);
 
                 if(Result.contains(fullname) == true){
                     consistent = consistent + "\n[PASS]  Search filter returned only names which match \"" + usernamesSearch[i] + "\"";
@@ -1324,7 +1324,7 @@ public class dev_380_list_create_new_user {
 
                     //Take a screenshot for evidence
                     try{
-                        consistent = consistent + (WL.screenshot(driver, WL));
+                        consistent = consistent + (BC.screenshot(driver, BC));
                     } catch (Exception Exception){
                         Exception.printStackTrace();
                     }
@@ -1350,7 +1350,7 @@ public class dev_380_list_create_new_user {
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");

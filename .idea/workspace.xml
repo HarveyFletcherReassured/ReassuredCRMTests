@@ -2,173 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb2b817e-b3e7-4754-b170-69524e6fcb89" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_14_01_33_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_14_01_37_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_14_01_39_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_14_01_41_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_14_01_43_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_35_30_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_35_34_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_35_36_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_35_38_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_35_40_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_35_42_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_37_13_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_37_17_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_37_19_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_37_21_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_37_23_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_37_24_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_43_20_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_43_24_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_43_26_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_43_28_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_43_30_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_45_59_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_46_03_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_46_05_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_46_07_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_46_09_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_47_30_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_47_34_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_47_36_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_47_38_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_47_40_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_52_21_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_52_25_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_52_28_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_52_30_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_52_32_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_55_31_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_55_35_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_55_37_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_55_39_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_55_41_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_57_23_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_57_28_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_57_30_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_57_32_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_57_34_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_58_53_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_58_57_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_58_59_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_59_01_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_59_03_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_59_47_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_59_51_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_59_53_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_59_56_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_15_59_57_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_01_11_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_01_15_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_01_17_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_01_19_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_01_21_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_05_26_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_05_30_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_05_32_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_05_34_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_05_36_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_07_51_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_07_55_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_07_57_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_07_59_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_08_01_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_09_20_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_09_24_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_09_26_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_09_28_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_09_30_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_10_23_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_10_28_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_10_30_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_10_32_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_10_34_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_20_11_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_20_15_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_20_17_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_20_18_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_20_21_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_21_04_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_21_08_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_21_10_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_21_12_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_21_14_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_22_02_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_22_06_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_22_08_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_22_10_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_22_12_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_23_55_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_23_59_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_24_01_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_24_03_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_24_05_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_24_36_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_24_41_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_24_43_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_24_45_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_24_47_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_25_21_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_25_25_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_25_28_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_25_29_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_25_32_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_26_15_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_26_19_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_26_21_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_26_23_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_26_25_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_27_34_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_29_22_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_30_24_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_30_50_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_35_46_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_35_49_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_43_21_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_16_43_41_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_03_59_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_04_01_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_05_16_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_05_19_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_07_23_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_07_25_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_09_25_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_09_27_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_09_48_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_09_51_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_10_48_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_12_12_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_13_22_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_14_21_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_18_36_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_28_17_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_30_55_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_31_32_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_32_00_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_34_13_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_34_35_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_35_49_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_36_18_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_38_23_GMT_2017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CRM_Tests/screenshots/shot_Mon_Dec_11_17_40_16_GMT_2017.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/baseclass.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/baseclass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$1.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$10.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$2.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$3.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$4.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$5.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$6.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$7.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$8.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$9.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user.class" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/dev_380_list_create_new_user.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/logfile.txt" afterPath="$PROJECT_DIR$/out/production/CRM_Tests/CRM_Tests/logfile.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" afterPath="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java" afterPath="$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/logfile.txt" afterPath="$PROJECT_DIR$/src/CRM_Tests/logfile.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -187,8 +21,8 @@
       <file leaf-file-name="baseclass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CRM_Tests/baseclass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="113" column="31" lean-forward="false" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
+            <state relative-caret-position="168">
+              <caret line="161" column="70" lean-forward="false" selection-start-line="161" selection-start-column="70" selection-end-line="161" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -199,8 +33,8 @@
       <file leaf-file-name="dev_380_list_create_new_user.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="56" column="66" lean-forward="false" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
+            <state relative-caret-position="281">
+              <caret line="1359" column="0" lean-forward="true" selection-start-line="1359" selection-start-column="0" selection-end-line="1359" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -221,10 +55,11 @@
       <file leaf-file-name="login_page_tests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-88">
-              <caret line="502" column="104" lean-forward="false" selection-start-line="502" selection-start-column="104" selection-end-line="502" selection-end-column="104" />
+            <state relative-caret-position="240">
+              <caret line="587" column="34" lean-forward="false" selection-start-line="587" selection-start-column="34" selection-end-line="587" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1513097954983" expanded="true" signature="27:113" ph="..." />
+                <marker date="1513097954983" expanded="true" signature="26609:26823" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -253,6 +88,9 @@
       <find>assertFal</find>
       <find>AdminViewUserListSearchLastname</find>
     </findStrings>
+    <replaceStrings>
+      <replace>BC</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -934,10 +772,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4916388" sideWeight="0.3326226" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43366778" sideWeight="0.3326226" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4916388" sideWeight="0.6673774" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43366778" sideWeight="0.6673774" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1081,18 +919,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="502" column="104" lean-forward="false" selection-start-line="502" selection-start-column="104" selection-end-line="502" selection-end-column="104" />
+        <state relative-caret-position="240">
+          <caret line="587" column="34" lean-forward="false" selection-start-line="587" selection-start-column="34" selection-end-line="587" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1513097954983" expanded="true" signature="27:113" ph="..." />
+            <marker date="1513097954983" expanded="true" signature="26609:26823" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CRM_Tests/baseclass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="113" column="31" lean-forward="false" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
+        <state relative-caret-position="168">
+          <caret line="161" column="70" lean-forward="false" selection-start-line="161" selection-start-column="70" selection-end-line="161" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1109,8 +948,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="56" column="66" lean-forward="false" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
+        <state relative-caret-position="281">
+          <caret line="1359" column="0" lean-forward="true" selection-start-line="1359" selection-start-column="0" selection-end-line="1359" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
