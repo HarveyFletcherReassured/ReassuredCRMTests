@@ -101,6 +101,38 @@ public class baseclass {
         return result;
     }
 
+    public String usernameToFirstname(String usernameSearch){
+        String FullName = "";
+
+        if(usernameSearch == "hfletcher"){
+            FullName = "Harvey Fletcher";
+        }else if(usernameSearch == "dwilkins"){
+            FullName = "Dawn Wilkins";
+        }else if(usernameSearch == "dharris"){
+            FullName = "Dean Harris";
+        }else if(usernameSearch == "sloadwickmgr"){
+            FullName = "Sherrie Loadwick";
+        }else if(usernameSearch == "enewell"){
+            FullName = "Emer Newell";
+        }else if(usernameSearch == "dpescottrl"){
+            FullName = "Dave Pescott";
+        }else if(usernameSearch == "bgallop"){
+            FullName = "Becky Gallop";
+        }else if(usernameSearch == "swilkin"){
+            FullName = "Simon Wilkin";
+        }else if(usernameSearch == "apougher"){
+            FullName = "Amy Pougher";
+        }else if(usernameSearch == "aweber"){
+            FullName = "Amy Weber";
+        }else if(usernameSearch == "mwatts"){
+            FullName = "Matt Watts";
+        }else if(usernameSearch == "lwatts"){
+            FullName = "Luke Watts";
+        }
+
+        return FullName;
+    }
+
     static void writeout(String message) throws IOException{
         Date currentdate = new Date();
         try{

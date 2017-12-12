@@ -1,8 +1,9 @@
 package CRM_Tests;
 
-import org.apache.regexp.RE;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+
 
 /**
  * Created by hfletcher on 11/12/2017.
@@ -41,16 +42,28 @@ public class dev_380_list_create_new_user {
         //Start the test by opening the form
         AdminUserOpenForm(driver, url, message, WL);
         //Now do field validation checks
-        //AddUserFieldValidationsBlankForm(driver, url, message, WL);
-        //AddUserFieldValidationsWhiteSpaceAllFields(driver, url, message, WL);
-        //AddUserFieldValidationsSpecialChars(driver, url, message, WL);
-        //AddUserFieldValidationsEmailAddress(driver, url, message, WL);
-        //AddUserFieldValidationsPhoneExtension(driver, url, message, WL);
-        //AddUserFieldValidationsValid(driver, url, message, WL);
-        //Open the user list form
-        //AdminViewUserListSearchOptions(driver, url, message, WL);
-        //AdminViewUserListCheckTableHeadings(driver, url, message, WL);
+        AddUserFieldValidationsBlankForm(driver, url, message, WL);
+        AddUserFieldValidationsWhiteSpaceAllFields(driver, url, message, WL);
+        AddUserFieldValidationsSpecialChars(driver, url, message, WL);
+        AddUserFieldValidationsEmailAddress(driver, url, message, WL);
+        AddUserFieldValidationsPhoneExtension(driver, url, message, WL);
+        AddUserFieldValidationsValid(driver, url, message, WL);
+        //Open the user list form and run the required tests.
+        AdminViewUserListSearchOptions(driver, url, message, WL);
+        AdminViewUserListCheckTableHeadings(driver, url, message, WL);
         AdminViewUserListSearchFirstname(driver, url, message, WL);
+        AdminViewUserListSearchLastname(driver, url, message, WL);
+        AdminViewUserListSearchFirstnameLastname(driver, url, message, WL);
+        AdminViewUserListSearchUsername(driver, url, message, WL);
+
+        //Tests are done! Log message
+        try{
+            message = "[INFO]  Finished the tests in \"DEV_380\"_list_create_new_user";
+            WL.writeout(message);
+        } catch (Exception Exception){
+            System.out.println(message);
+            System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
+        }
     }
 
     static void AdminUserOpenForm(WebDriver driver, String url, String message, baseclass WL){
@@ -1096,29 +1109,243 @@ public class dev_380_list_create_new_user {
         //Search for "Andrew"
         driver.findElement(By.id("filter")).sendKeys("Andrew");
 
+        //Simplify results output
+        String results = "";
+
         //Check results that are returned - assume we have at least 16 andrews in the company, row 17 is for andy smith.
         int i = 1;
+        int fail = 0;
         String Result = "";
         while(i <= 16){
             Result = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/tbody/tr[" + i + "]/td[1]")).getText();
 
             if(!Result.contains("Andrew")){
                 consistent = consistent + "\n[FAIL]  Search filter returned an " + Result + ", which is not an \"Andrew\"";
+                results = results + "\n    " + i + " -> " + Result;
+
+                fail = 1;
+
+                //Take a screenshot for evidence
+                try{
+                    consistent = consistent + (WL.screenshot(driver, WL));
+                } catch (Exception Exception){
+                    Exception.printStackTrace();
+                }
             } else {
                 consistent = consistent + "\n[PASS]  Search filter returned only names which contain \"Andrew\"";
-                consistent = consistent + "\n    " + i + "-> " + Result;
+                results = results + "\n    " + i + " -> " + Result;
             }
 
             i++;
         }
 
+        consistent = consistent + "\n[INFO]  Results:" + results;
+
         Result = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/tbody/tr[17]/td[1]")).getText();
         if(!Result.contains("Andy Smith (Mgr)")){
             consistent = consistent + "\n[FAIL]  Search filter returned " + Result + ", which is not \"Andy Smith (Mgr)\"";
+
+            //Take a screenshot for evidence
+            try{
+                consistent = consistent + (WL.screenshot(driver, WL));
+            } catch (Exception Exception){
+                Exception.printStackTrace();
+            }
+
+            fail = 1;
         } else {
             consistent = consistent + "\n[PASS]  Search filter returned names which contain \"Andrew\" as firstname, including Andy Smith Mgr";
-            consistent = consistent + "\n    17-> " + Result;
+            consistent = consistent + "\n    17 -> " + Result;
         }
+
+        if(fail == 0){
+            consistent = consistent + "\n[PASS]  Firstname as search term complete, passed.";
+        } else {
+            consistent = consistent + "\n[FAIL]  Firstname as search term complete, failed.";
+        }
+
+        //Write to the log file, if it fails, print out to System.out and add a warning message
+        try{
+            message = consistent;
+            WL.writeout(message);
+        } catch (Exception Exception){
+            System.out.println(consistent);
+            System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
+        }
+    }
+
+    static void AdminViewUserListSearchLastname(WebDriver driver, String url, String message, baseclass WL){
+        //Declare that the new test was started, write the test name
+        String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
+
+        //Re load the page
+        driver.get(url + "all-users");
+
+        //Search for "Andrew"
+        driver.findElement(By.id("filter")).sendKeys("Smith");
+
+        //For simplicity, I want to store results in a string
+        String results = "";
+
+        //Check results that are returned - assume we have at least 16 andrews in the company, row 17 is for andy smith.
+        int i = 1;
+        int fail = 0;
+        String Result = "";
+        while(i <= 11){
+            Result = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/tbody/tr[" + i + "]/td[1]")).getText();
+
+            if(!Result.contains("Smith")){
+                consistent = consistent + "\n[FAIL]  Search filter returned an " + Result + ", which is not a \"Smith\"";
+
+                //Take a screenshot for evidence
+                try{
+                    consistent = consistent + (WL.screenshot(driver, WL));
+                } catch (Exception Exception){
+                    Exception.printStackTrace();
+                }
+
+                results = results + "\n    " + i + " -> " + Result;
+
+                fail = 1;
+            } else {
+                consistent = consistent + "\n[PASS]  Search filter returned only names which contain \"Smith\"";
+                results = results + "\n    " + i + " -> " + Result;
+            }
+
+            i++;
+        }
+
+        consistent = consistent + "\n[INFO]  Results:" + results;
+
+        if(fail == 0){
+            consistent = consistent + "\n[PASS]  Lastname as search term complete, passed.";
+        } else {
+            consistent = consistent + "\n[FAIL]  Lastname as search term complete, failed.";
+        }
+
+        //Write to the log file, if it fails, print out to System.out and add a warning message
+        try{
+            message = consistent;
+            WL.writeout(message);
+        } catch (Exception Exception){
+            System.out.println(consistent);
+            System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
+        }
+    }
+
+    static void AdminViewUserListSearchFirstnameLastname(WebDriver driver, String url, String message, baseclass WL){
+        //Declare that the new test was started, write the test name
+        String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
+
+        //Re load the page
+        driver.get(url + "all-users");
+
+        //Search for "Andrew"
+        driver.findElement(By.id("filter")).sendKeys("Andrew Smith");
+
+        //Check results that are returned - assume we have at least 16 andrews in the company, row 17 is for andy smith.
+        int i = 1;
+        String Result = "";
+
+        try{
+            Result = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/tbody/tr[1]/td[1]")).getText();
+        } catch (NoSuchElementException Exception){
+            consistent = consistent + "\n[FAIL]  Search filter returned only names which contain \"Andrew Smith\", or did not return any results.";
+            consistent = consistent + "\n    " + i + " -> " + Result;
+        }
+
+        if(!Result.contains("Andrew Smith")){
+            consistent = consistent + "\n[FAIL]  Search filter returned" + Result + ", which is not a \"Andrew Smith\", or did not return any results.";
+
+            //Take a screenshot for evidence
+            try{
+                consistent = consistent + (WL.screenshot(driver, WL));
+            } catch (Exception Exception){
+                Exception.printStackTrace();
+            }
+        } else {
+            consistent = consistent + "\n[PASS]  Search filter returned only names which match \"Andrew Smith\"";
+            consistent = consistent + "\n    " + i + " -> " + Result;
+        }
+
+        //Write to the log file, if it fails, print out to System.out and add a warning message
+        try{
+            message = consistent;
+            WL.writeout(message);
+        } catch (Exception Exception){
+            System.out.println(consistent);
+            System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
+        }
+    }
+
+    static void AdminViewUserListSearchUsername(WebDriver driver, String url, String message, baseclass WL){
+        //Declare that the new test was started, write the test name
+        String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
+
+        //Re load the page
+        driver.get(url + "all-users");
+
+        //Setup a list for usernames search terms
+        String[] usernamesSearch;
+        usernamesSearch = new String[12];
+
+        //Simplify the output in a results string
+        String results = "";
+
+        //Build a list of usernames to search for
+        int i = 0;
+        while(i < 12){
+            String[] Credentials = WL.userCredentials(i, 1);
+            usernamesSearch[i] = Credentials[0];
+            i++;
+        }
+
+        i = 0;
+
+        //For each user group, search.
+        while (i < usernamesSearch.length){
+            //Search for "Username"
+            driver.findElement(By.id("filter")).sendKeys(usernamesSearch[i]);
+
+            //Is there a result?
+            String Result = "";
+
+            try{
+                Result = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div[2]/div/table/tbody/tr[1]/td[1]")).getText();
+
+                //What is the fullname of the user
+                String fullname = WL.usernameToFirstname(usernamesSearch[i]);
+
+                if(Result.contains(fullname) == true){
+                    consistent = consistent + "\n[PASS]  Search filter returned only names which match \"" + usernamesSearch[i] + "\"";
+                    results = results + "\n    " + i + " -> " + Result;
+                } else {
+                    consistent = consistent + "\n[FAIL]  Search filter returned " + Result + ", which is not a \"" + usernamesSearch[i] + "\", or did not return any results.";
+
+                    //Take a screenshot for evidence
+                    try{
+                        consistent = consistent + (WL.screenshot(driver, WL));
+                    } catch (Exception Exception){
+                        Exception.printStackTrace();
+                    }
+
+                    //Write what we got to the results anyway
+                    results = results + "\n    " + i + " -> " + Result;
+                }
+            } catch (NoSuchElementException Exception){
+                consistent = consistent + "\n[FAIL]  Search filter did not return any results.";
+                consistent = consistent + "\n    " + i + " -> " + Result;
+            }
+
+            //Clear the field
+            driver.findElement(By.id("filter")).clear();
+
+            //Increment i
+            i++;
+        }
+
+        //Add the results to the output
+        consistent = consistent + "\n[INFO]    Results:" + results;
 
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
