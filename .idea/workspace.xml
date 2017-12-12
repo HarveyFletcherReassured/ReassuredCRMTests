@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb2b817e-b3e7-4754-b170-69524e6fcb89" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" afterPath="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java" afterPath="$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java" afterPath="$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +23,8 @@
       <file leaf-file-name="baseclass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CRM_Tests/baseclass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="161" column="70" lean-forward="false" selection-start-line="161" selection-start-column="70" selection-end-line="161" selection-end-column="70" />
+            <state relative-caret-position="-104">
+              <caret line="145" column="59" lean-forward="false" selection-start-line="145" selection-start-column="59" selection-end-line="145" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dev_380_list_create_new_user.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dev_380_list_create_new_user.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="1359" column="0" lean-forward="true" selection-start-line="1359" selection-start-column="0" selection-end-line="1359" selection-end-column="0" />
+            <state relative-caret-position="-21105">
+              <caret line="56" column="64" lean-forward="false" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,14 +54,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_page_tests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login_page_tests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="587" column="34" lean-forward="false" selection-start-line="587" selection-start-column="34" selection-end-line="587" selection-end-column="34" />
+            <state relative-caret-position="376">
+              <caret line="595" column="14" lean-forward="false" selection-start-line="595" selection-start-column="14" selection-end-line="595" selection-end-column="14" />
               <folding>
-                <marker date="1513097954983" expanded="true" signature="27:113" ph="..." />
-                <marker date="1513097954983" expanded="true" signature="26609:26823" ph="{...}" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,6 +88,7 @@
       <find>//Take a sc</find>
       <find>assertFal</find>
       <find>AdminViewUserListSearchLastname</find>
+      <find>WL</find>
     </findStrings>
     <replaceStrings>
       <replace>BC</replace>
@@ -131,10 +133,10 @@
         <option value="$PROJECT_DIR$/src/CRM_Tests/notifications_send_setup.java" />
         <option value="$PROJECT_DIR$/src/CRM_Tests/check_provider_logins.java" />
         <option value="$PROJECT_DIR$/src/CRM_Tests/lead_creation_method.java" />
-        <option value="$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java" />
-        <option value="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" />
         <option value="$PROJECT_DIR$/src/CRM_Tests/logfile.txt" />
+        <option value="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" />
         <option value="$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java" />
+        <option value="$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java" />
       </list>
     </option>
   </component>
@@ -917,21 +919,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java">
+    <entry file="file://$PROJECT_DIR$/src/CRM_Tests/baseclass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="587" column="34" lean-forward="false" selection-start-line="587" selection-start-column="34" selection-end-line="587" selection-end-column="34" />
+        <state relative-caret-position="-104">
+          <caret line="145" column="59" lean-forward="false" selection-start-line="145" selection-start-column="59" selection-end-line="145" selection-end-column="59" />
           <folding>
-            <marker date="1513097954983" expanded="true" signature="27:113" ph="..." />
-            <marker date="1513097954983" expanded="true" signature="26609:26823" ph="{...}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CRM_Tests/baseclass.java">
+    <entry file="file://$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="161" column="70" lean-forward="false" selection-start-line="161" selection-start-column="70" selection-end-line="161" selection-end-column="70" />
+        <state relative-caret-position="-21105">
+          <caret line="56" column="64" lean-forward="false" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -946,10 +947,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java">
+    <entry file="file://$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="1359" column="0" lean-forward="true" selection-start-line="1359" selection-start-column="0" selection-end-line="1359" selection-end-column="0" />
+        <state relative-caret-position="376">
+          <caret line="595" column="14" lean-forward="false" selection-start-line="595" selection-start-column="14" selection-end-line="595" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

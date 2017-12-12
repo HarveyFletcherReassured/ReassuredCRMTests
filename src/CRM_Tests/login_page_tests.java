@@ -11,11 +11,11 @@ import java.lang.reflect.Array;
  */
 public class login_page_tests{
 
-    static void MainClass(WebDriver driver, String url, String message, baseclass WL){
+    static void MainClass(WebDriver driver, String url, String message, baseclass BC){
         driver.get(url);
 
         //Setup username and password VARS, they will be needed later
-        String[] Credentials = WL.userCredentials(12,1);
+        String[] Credentials = BC.userCredentials(12,1);
         String username = "";
         String password = "";
 
@@ -24,52 +24,52 @@ public class login_page_tests{
         System.out.println(message);
 
         //Tests that check text on the page
-        //PageText(driver, url, message, WL);
+        //PageText(driver, url, message, BC);
 
         //Tests that check all the links on the page
-        //LinkChecks(driver, url, message, WL);
+        //LinkChecks(driver, url, message, BC);
 
         //Test a set of credentials with a valid username, invalid password
         //Get a valid username and invalid password
-        Credentials = WL.userCredentials(0,1);
+        Credentials = BC.userCredentials(0,1);
         username = Credentials[0];
         password = Credentials[1];
         //Start Test
-        LCValidUserNotPass(driver, url, message, WL, username, password);
+        LCValidUserNotPass(driver, url, message, BC, username, password);
 
         //Test a set of credentials with an invalid username, valid password
         //Get login details
-        Credentials = WL.userCredentials(12,0);
+        Credentials = BC.userCredentials(12,0);
         username = Credentials[0];
         password = Credentials[1];
         //Start Test
-        LCValidPassNotUser(driver, url, message, WL, username, password);
+        LCValidPassNotUser(driver, url, message, BC, username, password);
 
         //Test a set of credentials with a no username, no password
         //Get Login Details
         username = "";
         password = "";
         //Start Test
-        LCNoUserAndPass(driver, url, message, WL, username, password);
+        LCNoUserAndPass(driver, url, message, BC, username, password);
 
         //Test a set of credentials with a username, no password
         //Get Login Details
-        Credentials = WL.userCredentials(0,0);
+        Credentials = BC.userCredentials(0,0);
         username = Credentials[0];
         password = "";
         //Start Test
-        LCUserAndNoPass(driver, url, message, WL, username, password);
+        LCUserAndNoPass(driver, url, message, BC, username, password);
 
         //Test a set of credentials with a valid username, valid password
         //Get Login Details
-        Credentials = WL.userCredentials(0,0);
+        Credentials = BC.userCredentials(0,0);
         username = Credentials[0];
         password = Credentials[1];
         //Start Test
-        LCValidUserAndPass(driver, url, message, WL, username, password);
+        LCValidUserAndPass(driver, url, message, BC, username, password);
     }
 
-    static void PageText(WebDriver driver, String url, String message, baseclass WL){
+    static void PageText(WebDriver driver, String url, String message, baseclass BC){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -87,7 +87,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -107,7 +107,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -127,7 +127,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -136,14 +136,14 @@ public class login_page_tests{
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void LinkChecks(WebDriver driver, String url, String message, baseclass WL){
+    static void LinkChecks(WebDriver driver, String url, String message, baseclass BC){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -172,7 +172,7 @@ public class login_page_tests{
 
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception E){
                     E.printStackTrace();
                 }
@@ -183,7 +183,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -214,7 +214,7 @@ public class login_page_tests{
 
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception E){
                     E.printStackTrace();
                 }
@@ -225,7 +225,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -259,7 +259,7 @@ public class login_page_tests{
 
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception E){
                     E.printStackTrace();
                 }
@@ -273,7 +273,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -282,14 +282,14 @@ public class login_page_tests{
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void LCValidUserNotPass(WebDriver driver, String url, String message, baseclass WL, String username, String password){
+    static void LCValidUserNotPass(WebDriver driver, String url, String message, baseclass BC, String username, String password){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -309,7 +309,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -328,7 +328,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -337,14 +337,14 @@ public class login_page_tests{
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void LCValidPassNotUser(WebDriver driver, String url, String message, baseclass WL, String username, String password){
+    static void LCValidPassNotUser(WebDriver driver, String url, String message, baseclass BC, String username, String password){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -365,7 +365,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -384,7 +384,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -393,14 +393,14 @@ public class login_page_tests{
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void LCNoUserAndPass(WebDriver driver, String url, String message, baseclass WL, String username, String password){
+    static void LCNoUserAndPass(WebDriver driver, String url, String message, baseclass BC, String username, String password){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -420,7 +420,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -440,7 +440,7 @@ public class login_page_tests{
 
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception E){
                     E.printStackTrace();
                 }
@@ -451,7 +451,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -460,14 +460,14 @@ public class login_page_tests{
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void LCUserAndNoPass(WebDriver driver, String url, String message, baseclass WL, String username, String password) {
+    static void LCUserAndNoPass(WebDriver driver, String url, String message, baseclass BC, String username, String password) {
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -491,7 +491,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -511,7 +511,7 @@ public class login_page_tests{
 
                 //Take a screenshot for evidence
                 try{
-                    consistent = consistent + (WL.screenshot(driver, WL));
+                    consistent = consistent + (BC.screenshot(driver, BC));
                 } catch (Exception E){
                     E.printStackTrace();
                 }
@@ -522,7 +522,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -531,14 +531,14 @@ public class login_page_tests{
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try {
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception) {
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
         }
     }
 
-    static void LCValidUserAndPass(WebDriver driver, String url, String message, baseclass WL, String username, String password){
+    static void LCValidUserAndPass(WebDriver driver, String url, String message, baseclass BC, String username, String password){
         //Declare that the new test was started, write the test name
         String consistent = "\n[INFO]  Started test " + new Object(){}.getClass().getEnclosingMethod().getName();
 
@@ -562,7 +562,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -584,7 +584,7 @@ public class login_page_tests{
 
             //Take a screenshot for evidence
             try{
-                consistent = consistent + (WL.screenshot(driver, WL));
+                consistent = consistent + (BC.screenshot(driver, BC));
             } catch (Exception E){
                 E.printStackTrace();
             }
@@ -593,7 +593,7 @@ public class login_page_tests{
         //Write to the log file, if it fails, print out to System.out and add a warning message
         try{
             message = consistent;
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(consistent);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");

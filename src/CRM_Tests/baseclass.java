@@ -52,23 +52,23 @@ public class baseclass {
         String ThreeMonths = sdf.format(((ValidDate.getTime() / 1000) + 786400) * 1000);
         String ThreeMonthsAndDay = sdf.format(((ValidDate.getTime() / 1000) + 7884000 + 86400) * 1000);
         String daterequired = "12/01/1999";
-        baseclass WL = new baseclass();
+        baseclass BC = new baseclass();
         String message = "Initial.";
 
         //Tests for the login page
         //login_page_tests LoginPage = new login_page_tests();
-        //login_page_tests.MainClass(driver, url, message, WL);
+        //login_page_tests.MainClass(driver, url, message, BC);
 
         //Tests for the add user and list user page
         dev_380_list_create_new_user ListCreateNewUser = new dev_380_list_create_new_user();
-        dev_380_list_create_new_user.MainClass(driver, url, message, WL);
+        dev_380_list_create_new_user.MainClass(driver, url, message, BC);
 
         //Close any remaining webdriver sessions
         try{
             driver.quit();
         } catch (Exception Exception) {
             message = "[INFO]  There was no open driver session to close.";
-            WL.writeout(message);
+            BC.writeout(message);
         }
     }
 
@@ -143,7 +143,7 @@ public class baseclass {
         }
     }
 
-    public String screenshot(WebDriver driver, baseclass WL) throws IOException{
+    public String screenshot(WebDriver driver, baseclass BC) throws IOException{
         Date datetime = new Date();
 
         String FileName = "C:/CRM_Tests/src/CRM_Tests/screenshots/shot_" + datetime.toString().replace(" ","_").replace(":","_") + ".png";

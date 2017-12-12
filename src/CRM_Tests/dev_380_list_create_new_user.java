@@ -10,11 +10,11 @@ import org.openqa.selenium.WebDriver;
  */
 public class dev_380_list_create_new_user {
 
-    static void MainClass(WebDriver driver, String url, String message, baseclass WL) {
+    static void MainClass(WebDriver driver, String url, String message, baseclass BC) {
         //Write the new class to the log
         try{
             message = "[INFO]  Started the tests in \"DEV_380\"_list_create_new_user";
-            WL.writeout(message);
+            BC.writeout(message);
         } catch (Exception Exception){
             System.out.println(message);
             System.out.println("[WARN]  Couldn't write to the log file, continuing anyway...");
@@ -24,37 +24,37 @@ public class dev_380_list_create_new_user {
         driver.get(url);
 
         //Set up variables to generate credentials variables, these are invalid
-        String[] Credentials = WL.userCredentials(12, 1);
+        String[] Credentials = BC.userCredentials(12, 1);
 
         //Set up admin login credentials
-        Credentials = WL.userCredentials(0, 0);
+        Credentials = BC.userCredentials(0, 0);
         String AdminUser = Credentials[0];
         String AdminPass = Credentials[1];
 
         //Set up normal login credentials
-        Credentials = WL.userCredentials(1, 0);
+        Credentials = BC.userCredentials(1, 0);
         String NormUser = Credentials[0];
         String NormPass = Credentials[1];
 
         //Positive Testing
         //Sign in as an admin user
-        login_page_tests.LCValidUserAndPass(driver, url, message, WL, AdminUser, AdminPass);
+        login_page_tests.LCValidUserAndPass(driver, url, message, BC, AdminUser, AdminPass);
         //Start the test by opening the form
-        AdminUserOpenForm(driver, url, message, WL);
+        AdminUserOpenForm(driver, url, message, BC);
         //Now do field validation checks
-        AddUserFieldValidationsBlankForm(driver, url, message, WL);
-        AddUserFieldValidationsWhiteSpaceAllFields(driver, url, message, WL);
-        AddUserFieldValidationsSpecialChars(driver, url, message, WL);
-        AddUserFieldValidationsEmailAddress(driver, url, message, WL);
-        AddUserFieldValidationsPhoneExtension(driver, url, message, WL);
-        AddUserFieldValidationsValid(driver, url, message, WL);
+        AddUserFieldValidationsBlankForm(driver, url, message, BC);
+        AddUserFieldValidationsWhiteSpaceAllFields(driver, url, message, BC);
+        AddUserFieldValidationsSpecialChars(driver, url, message, BC);
+        AddUserFieldValidationsEmailAddress(driver, url, message, BC);
+        AddUserFieldValidationsPhoneExtension(driver, url, message, BC);
+        AddUserFieldValidationsValid(driver, url, message, BC);
         //Open the user list form and run the required tests.
-        AdminViewUserListSearchOptions(driver, url, message, WL);
-        AdminViewUserListCheckTableHeadings(driver, url, message, WL);
-        AdminViewUserListSearchFirstname(driver, url, message, WL);
-        AdminViewUserListSearchLastname(driver, url, message, WL);
-        AdminViewUserListSearchFirstnameLastname(driver, url, message, WL);
-        AdminViewUserListSearchUsername(driver, url, message, WL);
+        AdminViewUserListSearchOptions(driver, url, message, BC);
+        AdminViewUserListCheckTableHeadings(driver, url, message, BC);
+        AdminViewUserListSearchFirstname(driver, url, message, BC);
+        AdminViewUserListSearchLastname(driver, url, message, BC);
+        AdminViewUserListSearchFirstnameLastname(driver, url, message, BC);
+        AdminViewUserListSearchUsername(driver, url, message, BC);
 
         //Tests are done! Log message
         try{
