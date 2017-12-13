@@ -1,7 +1,5 @@
 package CRM_Tests;
 
-import com.mysql.fabric.xmlrpc.base.Array;
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,9 +15,7 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
-import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by hfletcher on 07/09/2017.
@@ -41,18 +37,10 @@ public class baseclass {
     }
 
     static void thetest(WebDriver driver, String url) throws Exception{
-        //Set up a converter
-        SimpleDateFormat sdf = new SimpleDateFormat("dd'/'MM'/'yyyy");
-
-        //Set up some variables
-        Date ValidDate = new Date();
-        String Yesterday = sdf.format(((ValidDate.getTime() / 1000) - 86400) * 1000);
-        String Today = sdf.format(ValidDate.getTime());
-        String Tomorrow = sdf.format(((ValidDate.getTime() / 1000) + 86400) * 1000);
-        String ThreeMonths = sdf.format(((ValidDate.getTime() / 1000) + 786400) * 1000);
-        String ThreeMonthsAndDay = sdf.format(((ValidDate.getTime() / 1000) + 7884000 + 86400) * 1000);
-        String daterequired = "12/01/1999";
+        //Make sure we are able to call this class from other test scripts
         baseclass BC = new baseclass();
+
+        //Set the message to a starting point.
         String message = "Initial.";
 
         //Tests for the login page
@@ -102,8 +90,11 @@ public class baseclass {
     }
 
     public String usernameToFirstname(String usernameSearch){
+        //Initialise variable
         String FullName = "";
 
+        //What username we entered into this function affects what the full name should contain.
+        //This function is used for username searches.
         if(usernameSearch == "hfletcher"){
             FullName = "Harvey Fletcher";
         }else if(usernameSearch == "dwilkins"){
@@ -130,11 +121,15 @@ public class baseclass {
             FullName = "Luke Watts";
         }
 
+        //Return the searched user's full name.
         return FullName;
     }
 
     static void writeout(String message) throws IOException{
+        //What's the date?
         Date currentdate = new Date();
+
+        //Write to the log file with what we put into this function.
         try{
             System.out.println(message);
             Files.write(Paths.get("C:/CRM_Tests/src/CRM_Tests/logfile.txt"), (currentdate + ":" + "    " + message.replace("\n", System.getProperty("line.separator")) +  System.getProperty("line.separator") +  System.getProperty("line.separator")).getBytes(), StandardOpenOption.APPEND);
@@ -144,14 +139,18 @@ public class baseclass {
     }
 
     public String screenshot(WebDriver driver, baseclass BC) throws IOException{
+        //What's the date
         Date datetime = new Date();
 
+        //What do we want to save the file as?
         String FileName = "C:/CRM_Tests/src/CRM_Tests/screenshots/shot_" + datetime.toString().replace(" ","_").replace(":","_") + ".png";
 
+        //Take the screenshot
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File(FileName));
 
+        //Return a message so it gets added to the log.
         return "\n[INFO]  Screenshot saved as " + FileName;
     }
 

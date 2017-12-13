@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cb2b817e-b3e7-4754-b170-69524e6fcb89" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" afterPath="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java" afterPath="$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java" afterPath="$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CRM_Tests/logfile.txt" afterPath="$PROJECT_DIR$/src/CRM_Tests/logfile.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="baseclass.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="baseclass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CRM_Tests/baseclass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-104">
-              <caret line="145" column="59" lean-forward="false" selection-start-line="145" selection-start-column="59" selection-end-line="145" selection-end-column="59" />
+            <state relative-caret-position="287">
+              <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,7 +34,7 @@
       <file leaf-file-name="dev_380_list_create_new_user.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21105">
+            <state relative-caret-position="952">
               <caret line="56" column="64" lean-forward="false" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -54,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_page_tests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login_page_tests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="595" column="14" lean-forward="false" selection-start-line="595" selection-start-column="14" selection-end-line="595" selection-end-column="14" />
+            <state relative-caret-position="-1345">
+              <caret line="440" column="48" lean-forward="true" selection-start-line="440" selection-start-column="48" selection-end-line="440" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,9 +133,9 @@
         <option value="$PROJECT_DIR$/src/CRM_Tests/check_provider_logins.java" />
         <option value="$PROJECT_DIR$/src/CRM_Tests/lead_creation_method.java" />
         <option value="$PROJECT_DIR$/src/CRM_Tests/logfile.txt" />
-        <option value="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" />
         <option value="$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java" />
         <option value="$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java" />
+        <option value="$PROJECT_DIR$/src/CRM_Tests/baseclass.java" />
       </list>
     </option>
   </component>
@@ -165,6 +164,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -198,7 +198,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -732,12 +731,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.12 at 16h 25m 12s.xml">
-      <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.12 at 16h 25m 45s.xml">
-      <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.12 at 16h 26m 06s.xml">
       <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
     </history-entry>
@@ -762,6 +755,12 @@
     <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.12 at 16h 43m 57s.xml">
       <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.13 at 09h 45m 15s.xml">
+      <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__CRM_Tests_src_CRM_Tests_testNG_xml - 2017.12.13 at 09h 49m 09s.xml">
+      <configuration name="C:/CRM_Tests/src/CRM_Tests/testNG.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -774,15 +773,15 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43366778" sideWeight="0.3326226" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43366778" sideWeight="0.33528784" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43366778" sideWeight="0.6673774" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43366778" sideWeight="0.66471213" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2707889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27345416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -919,19 +918,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CRM_Tests/baseclass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="145" column="59" lean-forward="false" selection-start-line="145" selection-start-column="59" selection-end-line="145" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CRM_Tests/dev_380_list_create_new_user.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21105">
+        <state relative-caret-position="952">
           <caret line="56" column="64" lean-forward="false" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -949,8 +938,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CRM_Tests/login_page_tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="595" column="14" lean-forward="false" selection-start-line="595" selection-start-column="14" selection-end-line="595" selection-end-column="14" />
+        <state relative-caret-position="-1345">
+          <caret line="440" column="48" lean-forward="true" selection-start-line="440" selection-start-column="48" selection-end-line="440" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CRM_Tests/baseclass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
