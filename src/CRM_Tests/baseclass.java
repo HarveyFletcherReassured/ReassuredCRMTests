@@ -132,7 +132,7 @@ public class baseclass {
         //Write to the log file with what we put into this function.
         try{
             System.out.println(message);
-            Files.write(Paths.get("C:/CRM_Tests/src/output/logfile.txt"), (currentdate + ":" + "    " + message.replace("\n", System.getProperty("line.separator")) +  System.getProperty("line.separator") +  System.getProperty("line.separator")).getBytes(), StandardOpenOption.APPEND);
+            Files.write(Paths.get("C:/CRM_Tests/src/CRM_Tests/output/logfile.txt"), (currentdate + ":" + "    " + message.replace("\n", System.getProperty("line.separator")) +  System.getProperty("line.separator") +  System.getProperty("line.separator")).getBytes(), StandardOpenOption.APPEND);
         } catch (IOException WriteError){
             System.out.println("[WARN]  Failed to write the log file. Continuing anyway...");
         }
