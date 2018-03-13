@@ -8,8 +8,11 @@ import java.util.Date;
  * Created by hfletcher on 13/03/2018.
  */
 public class ClassGlobals extends baseclass{
-    //Important webdriver stuff that is used to execute tests
-    public static WebDriver driver = baseclass.driver;
+    //This is the location of the selenium hub to run the tests on
+    public static String huburl = "http://10.168.206.234:4445/wd/hub/";
+
+    //This is the number of instances we want to run on each test
+    public static final int instanceCount = 5;
 
     //This is the environment that the tests will be run on.
     public static String environment = "http://test.reassuredpensions.co.uk";

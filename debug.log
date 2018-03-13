@@ -1,2 +1,6 @@
 [0821/153713:ERROR:file_io_win.cc(227)] SetEndOfFile: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
 [0822/154522:ERROR:file_io_win.cc(227)] SetEndOfFile: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+[0313/113759.642:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0313/113759.643:ERROR:exception_snapshot_win.cc(87)] thread ID 10916 not found in process
+[0313/113759.643:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0313/113759.644:ERROR:scoped_process_suspend.cc(39)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
